@@ -1,18 +1,18 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty } from '@nestjs/swagger'
 
 export class CreateUserBody {
   @ApiProperty({ description: 'userName', example: 'Jack' })
-  unitPrice: number;
+  unitPrice: number
 
   @ApiProperty({ description: 'password' })
-  password: string;
+  password: string
 
   @ApiProperty({ description: 'gender 0:boy 1:girl' })
-  gender: number;
+  gender: number
 
   @ApiProperty({ description: 'email' })
-  email: string;
+  email: string
 
   @ApiProperty({ description: 'phoneNumber' })
-  mobile: string;
+  mobile: string
 }

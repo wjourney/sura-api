@@ -1,10 +1,11 @@
-import development from './env.development';
-import production from './env.production';
+import development from './env.development'
+import production from './env.production'
 
-const configs = {
+const options: Record<string, any> = {
   development,
   production,
-};
+}
+const env = process.env.NODE_ENV || 'development'
 
-const env = configs[process.env.NODE_ENV || 'development'];
-export { env };
+const config = options[env]
+export { config }

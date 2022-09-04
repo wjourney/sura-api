@@ -11,9 +11,9 @@ export default {
     host: 'localhost',
     port: 3306,
     username: 'root',
-    password: 'wenwen0815',
+    password: 'root',
     database: 'sura',
     autoLoadEntities: true,
     synchronize: true,
   },
-};
+}
