@@ -1,28 +1,18 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BaseDTO } from 'src/common/dto/base.dto';
 
-export class CreateUserDto extends BaseDTO {
-  @ApiProperty({ description: '用户名', example: '用户' })
-  userName: string;
+export class CreateUserBody {
+  @ApiProperty({ description: 'userName', example: 'Jack' })
+  unitPrice: number;
 
-  @ApiProperty({ description: '真实姓名' })
-  realName: string;
-
-  @ApiProperty({ description: '密码' })
+  @ApiProperty({ description: 'password' })
   password: string;
 
-  @ApiProperty({ description: '性别 0：男 1：女 2：保密' })
+  @ApiProperty({ description: 'gender 0:boy 1:girl' })
   gender: number;
 
-  @ApiProperty({ description: '邮箱' })
+  @ApiProperty({ description: 'email' })
   email: string;
 
-  @ApiProperty({ description: '手机号' })
+  @ApiProperty({ description: 'phoneNumber' })
   mobile: string;
-
-  @ApiProperty({ description: '部门ID' })
-  deptId: string;
-
-  @ApiProperty({ description: '状态: 0启用 1禁用' })
-  status: number;
 }
